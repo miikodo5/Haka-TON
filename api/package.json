@@ -1,0 +1,28 @@
+{
+  "name": "chariton-api",
+  "version": "1.0.0",
+  "description": "Smart Wallet prototype API",
+  "main": "index.js",
+  "engines": {
+    "node": "16.14.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node index.js",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+  },
+  "author": "Kherson Underground team",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-ws": "^5.0.2",
+    "mongodb": "^4.7.0",
+    "mongoose": "^6.4.2",
+    "node-coinmarketcap": "^0.2.0",
+    "tonweb": "^0.0.50",
+    "ws": "^8.8.0"
+  }
+}
